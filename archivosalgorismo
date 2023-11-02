@@ -1,0 +1,57 @@
+// Obtener elementos del DOM
+        const form = document.getElementById('myForm');
+        const downloadButton = document.getElementById('download-button');
+const btnbotones = document.getElementById("btnbotones")
+
+
+
+        // Agregar evento de envío del formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obtener el contenido del textarea
+            const descripcion = document.getElementById('descripcion').value;
+
+            // Crear una configuración para html2pdf.js
+            const pdfOptions = {
+                margin: 10,
+                filename: 'descripcion.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            };
+
+            // Convertir el contenido del formulario en PDF
+            html2pdf().from(descripcion).set(pdfOptions).outputPdf().then(function(pdf) {
+                // Establecer el PDF generado como enlace descargable
+                const blob = new Blob([pdf], { type: 'application/pdf' });
+                const url = URL.createObjectURL(blob);
+                downloadButton.href = url;
+                // Mostrar el botón de descarga
+                downloadButton.style.display = 'block';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const fileInput = document.getElementById('file-input');
+            const uploadButton = document.getElementById('upload-button');
+            const downloadLink = document.getElementById('download-link');
+        
+            uploadButton.addEventListener('click', function () {
+                if (fileInput.files.length > 0) {
+                    const file = fileInput.files[0];
+                    const objectURL = URL.createObjectURL(file);
+        
+                    downloadLink.href = objectURL;
+                    downloadLink.style.display = 'block';
+                    downloadLink.textContent = 'Descargar ' + file.name;
+                } else {
+                    alert('Por favor, seleccione un archivo antes de cargar.');
+                }
+            });
+        });
+     
+        
+        
+        
+        

@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background: url("../videosApoyo/imagenes/degradado3.PNG");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+    padding: 10px;
+}
+a{
+    font-size: 20px;
+ cursor: pointer;
+ margin: 10px;
+ color: yellow;
+}
+iframe {
+    /* width: 90%;
+
+    height: 20vh; */
+    box-shadow: 1px 4px 20px rgb(3, 236, 166);
+    border-radius: 10px;
+}
+.secion_uno{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.secion_dos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+#video-list {
+ 
+    margin-top: 20px;
+  
+    
+}
+.contenedorvideo{
+padding: 20px;
+}
+.videos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+}

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+    
+}
+ body{
+    background:linear-gradient(rgb(5, 2, 41),rgb(1, 44, 19),rgb(37, 1, 44)); 
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(85, 255, 0);
+    border-radius: 15px;
+ margin: 6px;
+animation-name: inicio;
+animation-duration: 4s;
+animation-iteration-count: 2;
+
+ text-shadow: 1px 1px 10px rgb(10, 6, 234);
+}
+@keyframes inicio{
+    10%{border: 4px solid red; }
+    20%{ background: black; }
+    40%{box-shadow: 1px 1px 10px rgb(241, 6, 217);}
+   50%{box-shadow: 1px 10px 10px rgb(62, 20, 58);}
+    75%{box-shadow: 1px 10px 10px rgb(140, 65, 133);}
+    80%{box-shadow: 1px 10px 10px rgb(241, 6, 217);}
+   
+} 
+
+:root{
+    --border_r:20px ;
+}
+.barra_progreso{
+    box-shadow: inset 6px 6px 12px #303030,
+     inset 6px 6px 12px #404040;
+     background-color: #383838;
+    width: 500px;
+    height: 40px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: var(--border_r);
+box-shadow: 0px 4px 0px rgb(53, 230, 9) ,0px 0px 4px rgb(53, 230, 9),0px 4px 0px rgb(53, 230, 9),0px 4px 0px rgb(53, 230, 9);
+} 
+.progreso{
+height: 100%;
+width: 0;
+background-image: linear-gradient(to left, rgb(53, 230, 9), rgb(100, 156, 91), rgb(74, 168, 50));
+box-shadow:0 0 10px #15699e
+0 0 20px #15699e;
+
+display: block;
+border-radius: var(--border_r);
+
+}
+#porcentaje{
+    font-size: 2.2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100px);   
+    color:white;  
+}
+.contenedor1{
+    text-align: center;
+   padding: 10px;
+   margin: 100px;
+}
+@media screen and (max-width: 425px) {
+    h1{
+       
+        font-size: 20px;
+
+    }
+    .barra_progreso{
+      
+        width: 200px;
+        height: 30px;
+        margin: 68px auto;
+    
+    }
+
+    #porcentaje{
+        font-size: 1.8em;
+        margin-top: -90px;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1{
+       
+        font-size: 15px;
+
+    }
+    .barra_progreso{
+      
+        width: 150px;
+        height: 25px;
+        margin: 74px auto;
+    
+    }
+
+    #porcentaje{
+        font-size: 1.4em;
+        margin-top: -90px;
+        
+    }
+}
+@media screen and (max-width: 320px) {
+    h1{
+       
+        font-size: 10px;
+
+    }
+    .barra_progreso{
+      
+        width: 100px;
+        height: 20px;
+        margin: 80px auto;
+    
+    }
+
+    #porcentaje{
+        font-size: 1.0em;
+        margin-top: -90px;
+        
+    }
+}

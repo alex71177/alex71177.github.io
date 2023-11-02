@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerperfil">
+      
+
+        <form  action="" enctype="multipart/form-data" class="form__perfil" id="form__perfil">
+            <div>
+                <h1>Editar Perfil</h1>
+              <img src="./imagenes/avatar.png" alt="avatar" id="img" />
+              <input type="file" name="foto" id="foto" accept="image/*" />
+              <label for="foto">Cambiar foto</label>
+             
+            </div>
+
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" idautocomplete="off" />
+            
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido"id="apelliod" id autocomplete="off" />
+            
+                <label for="apellido">Email</label>
+                <input type="email" name="email" id="email" idautocomplete="off" />
+            
+                <label for="apellido">Telefono</label>
+                <input type="number" name="Telefono"id="telefono" idautocomplete="off" />
+           <label for="">Pais</label>
+              <select name="" id="menu__pais">
+              <option value="">Seleciones el pais </option>
+               
+              </select><br><br>
+          
+              <button  id="btnregistro">Guardar</button>
+            </div>
+          </form>
+    
+        <script src="perfil.js"></script>
+    </div>
+</body>
+</html>

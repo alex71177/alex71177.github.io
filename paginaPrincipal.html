@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaPrincipal.css">
+    <script src="https://kit.fontawesome.com/5ca3312b29.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+ 
+<!--
+    al logearse debera dirigir a la pagina principa de la plataforma 
+    y al regsitrase debera tener permiso de logearse 
+-->
+
+    <div class="appprincipal">
+   <a href="#"id="btnmenuhambuguesa"> <i class="fa-solid fa-bars "  style="color: blue;"></i> </a>
+        <h1>Starblack 24/7</h1><br>
+        <!-- <a href="../login/login.html">Login</a>
+        <a href="../registro/registro.html">Regitro</a> -->
+    </div>
+
+    <aside id="menu" class="menu">
+  <div>
+   <div class="cabeseralogo">
+    <img src="../imagenes/login.gif" alt="" class="imglogo"><br>
+    <h3>Catedra de estudios afrocolombianos</h3>
+
+<hr>
+</div> 
+  </div>
+        
+        <a href="../aula/aula.html"><li>Aula</li></a>
+        <a href="../realidad/realidad.html"><li>Metaverso</li></a>
+        <!-- <a href="../perfil/infoperfil/inforperfil.html"><li> Perfil</li></a>  -->
+      
+        <a href="../archivopdf/archivosalgorismo.html"><li> Documentos</li></a> 
+        <select  size="1" onchange="window.location.href=this.value" >
+            <option value="" > RECURSO DE AOPOYO</option> 
+            <option value="https://www.storyjumper.com/">  Storyjumper</option> 
+            <option value="https://infograph.venngage.com/templates">infograph </option> 
+            <option value=""> </option> 
+            <option value=""> </option> 
+            <option value=""> </option> 
+            <option value=""> </option> 
+            <option value=""> </option> 
+        </select>
+    
+        <!-- <a href="../algorismoracial.html"><li> Algorismo rasial</li></a> -->
+        
+    </aside>
+    <!-- <img src="./imagenes/pc1.PNG" alt=""> -->
+
+       <!-- este es para el chatb -->
+
+       
+       <!-- <i class="fa-regular fa-message"></i></div> -->
+       <!-- <div class="chatbot">
+      
+       <div class="whatsapp"><i class="fa-solid fa-comments fa-beat" style="color: #1adb00;" id="whatsapp"></i> </div>
+    
+       <div id="chat-container">
+        <header>
+            <h2>chatbot</h2>
+        </header>
+        
+         
+           <div class="asistente" id="asistente"></div>
+           <div id="chat-output"></div>
+           <img src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" id="loader2" style="width:100px;height:100px;"/> 
+           <input type="text" id="user-input" placeholder="Escribe tu pregunta..."><br>
+           <button id="send-button">Enviar</button>
+      
+       </div>
+       </div> -->
+
+       <div class="whatsapp"><i class="fa-solid fa-comments fa-beat" style="color: #1adb00;" id="whatsapp"></i> </div> --
+       <div class="chat-container" id="chat-container">
+        <a href="#" id="cerrar" class="cerrar">x</a>
+           <div class="chat-header">
+               <h1> ESTE ES EL CHATBOT DE STARTBLACK 24/7</h1>
+           </div>
+           <div class="chat-log" id="chat-log">
+               <div class="chat-bot-message" ><img src="https://support.upwork.com/hc/article_attachments/360040474034/chatbot-data.png" style="border-radius:50%;width:40px;height:40px;"/>Hola Soy un chatbot.</div><br>
+           </div>
+           <div class="chat-input">
+               <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+               <button id="send-button">Enviar</button>
+           </div>
+       </div>
+
+      
+      
+        
+
+
+
+
+
+    <script src="paginaPrincipal.js"></script>
+</body>
+</html>

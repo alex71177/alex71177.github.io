@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image: url("./imagenes/grupoafro.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    background: rgb(200, 170, 70);
+}
+.container,.logo-texto{
+    display: flex;
+    justify-content: space-between;
+margin: 6px;
+}
+.logo-texto{
+    gap: 70px;
+
+}
+img{
+    width: 40px;
+}
+.menu{
+    font-size: 20px;
+padding: 10px;
+}
+
+a{
+color: black;
+    list-style: none;
+    text-decoration: none;
+    margin: 90px;
+
+
+}
+a:focus{
+    text-decoration: underline 2px yellow;
+    
+}
+p{
+    text-align: center;
+    padding: 20px;
+}
+.contenido{
+    width: 40%;
+    height: 16vh;
+    background:rgb(194, 169, 86);;
+    margin: 500px 860px 24px;
+}

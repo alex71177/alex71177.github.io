@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dbdbdb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .containerperfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .form__perfil{
+    margin: 10px;
+    background: #f0eded;
+    padding: 20px;
+    box-shadow:2px 5px 10px 7px  #AAA;
+  }
+  .imagen{
+    width: 20px;
+  }
+  main{
+    width: 30%;
+    margin: auto;
+    padding: 1em 8vw;
+    background: white;
+    box-shadow:  0 0 20px #ddd;
+  }
+  
+  h1{
+    text-align: center;
+
+    border-bottom: 1px solid #C4CBCE;
+    padding-bottom: .2em;
+  }
+  label{
+    font-size: 20px;
+  }
+  form > div{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  form img{
+    width: 60px;
+    border-radius: 50%;
+    border: 6px solid #AAA;
+  }
+  
+  form div:first-child{
+    align-items: center;
+  }
+  
+  form div:first-child input{
+    display: none;
+  }
+  
+  form div:first-child label{
+    background: #1F5F74;
+    color: white;
+    padding: 6px ;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 60px;
+    font-size: 10px;
+  }
+  
+  form input {
+    padding: 8px 20px;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    width: 300px;
+  }
+  select{
+    width: 340px;
+
+    padding: 8px 20px;
+
+  }
+
+  form button{
+    padding: 8px ;
+    margin-left: 40px;
+    width: 70%;
+    background: #36551F;
+    color: white;
+    border-radius: 3px;
+  }
